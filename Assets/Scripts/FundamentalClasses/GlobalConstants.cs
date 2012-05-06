@@ -17,12 +17,15 @@ public static class GlobalConstants{
 	public static readonly double DEFAULT_MUSIC_VOLUME = 0.5;
 	public static readonly double DEFAULT_SOUND_VOLUME = 0.5;
 	public static readonly int IDEAL_X_RESOLUTION = 1600;
-	public static readonly int IDEAL_Y_RESOLUTION = 900;
+	public static readonly int IDEAL_Y_RESOLUTION = 1000;
+	public static readonly int IDEAL_FONT_SIZE = 18;
 	
 	///rows - index of string, column - number of language in LocalizationLangages enum
 	public static string[][] STRING_ARRAY =new string[][]{
-		/*0*/new string[2]{"New Game","Новая Игра"},
-		/*1*/new string[2]{"Quit","Выход"}
+		/*0*/new string[2]{"Game","Игра"},
+		/*1*/new string[2]{"Quit","Выход"},
+		/* 2*/       new string[2]{"Settings","Опции"},
+		/* 3*/       new string[2]{"Funny mushrooms","Веселые грибочки"}
 	};
 	
 	/// <summary>
@@ -40,10 +43,8 @@ public static class GlobalConstants{
 		{
 		case LocalizationLanguages.English:
 			return new CultureInfo("en-US");
-			break;
 		case LocalizationLanguages.Russian:
 			return new CultureInfo("ru-RU");
-			break;
 		default:
 			return new CultureInfo("en-US");
 		}

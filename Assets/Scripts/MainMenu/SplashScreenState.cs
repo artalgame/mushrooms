@@ -3,24 +3,31 @@ using System.Collections;
 
 public class SplashScreenState : IMainMenuState {
 	
+	[SerializeField]
+		private Texture2D _splashTexture;
+	[SerializeField]
+		private RealObjectParameters textureParameter;
+	
 	void Awake(){
-		_mainMenu = (MainMenu)GameObject.FindGameObjectWithTag("MainMenu").GetComponent(typeof(MainMenu));
 	}
 	// Use this for initialization
 	void Start () {
-	
+	base.Start();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
 	}
-	void OnGUI()
+	public override void OnClick(object Source)
 	{
-		if(GUI.Button(new Rect(10,10,100,100),"Go to main menu"))
+		if(Source is SplashTextureControl)
 		{
-			_mainMenu._currentState = (IMainMenuState)_mainMenu.GetComponent(typeof(MainMenuState));
-			SetEnabledForState();
+				if(!_mainMenu.audio.isPlaying)
+				{
+					_mainMenu.audio.Play();
+				}
+				_mainMenu._currentState = (IMainMenuState)_mainMenu.GetComponent(typeof(MainMenuState));
+				SetEnabledForState();
 		}
 	}
 }

@@ -1,29 +1,64 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class MainMenuState : IMainMenuState {
-
 	// Use this for initialization
 	void Start () {
-	
+	 base.Start();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 	}
-	void OnGUI(){
-		if(GUI.Button(new Rect(100,100,100,50),LocalizationLanguages.English.ToString()))
+	/// <summary>
+	/// Raises the click event.
+	/// </summary>
+	/// <param name='Source'>
+	/// Source.
+	/// </param>
+	public override void OnClick(object Source){
+		if(Source is GameButtonControl)
 		{
-			GameCoreSingletone.Singletone.SettingController.Language = LocalizationLanguages.English;
+			try{
+				_mainMenu._currentState = (IMainMenuState)_mainMenu.GetComponent(typeof(PrepareToGameState));
+			}
+			catch(Exception ex)
+			{
+				Debug.LogError("can not set current set in _mainMenu becouse _mainMenu don't exist "+ex.Message);
+			}
+				SetEnabledForState();
 		}
-		if(GUI.Button(new Rect(100,200,100,50),LocalizationLanguages.Russian.ToString()))
-		{
-			GameCoreSingletone.Singletone.SettingController.Language = LocalizationLanguages.Russian;
+		else
+			if(Source is SettingButtonControl){
+				try{
+				_mainMenu._currentState = (IMainMenuState)_mainMenu.GetComponent(typeof(SettingsState));
+			}
+			catch(Exception ex)
+			{
+				Debug.LogError("can not set current set in _mainMenu becouse _mainMenu don't exist "+ex.Message);
+			}
+				SetEnabledForState();
+
+			}
+		else
+			if(Source is QuitButtonControl){
+				try{
+				Application.Quit();
+			}
+			catch(Exception ex)
+			{
+				Debug.LogError("can not set current set in _mainMenu becouse _mainMenu don't exist "+ex.Message);
+			}
+				SetEnabledForState();
+
+			}
+	}
+	void OnEnable(){
+		if(!audio.isPlaying){
+			audio.Play();
 		}
-		if(GUI.Button(new Rect(0,0,70,50),GameCoreSingletone.Singletone.LocalizationController.GetString(1)))
-		{
-			Application.Quit();
-		}
+			
 	}
 }

@@ -13,15 +13,15 @@ public class GameCore : MonoBehaviour
 		///don't destroy this fundamental object
 		GameObject.DontDestroyOnLoad(this);
 		///create Singletone of Game Core
-		var t =	GameCoreSingletone.Singletone;
-		
-	
-		
+		var t =	GameCoreSingletone.Singletone;		
 	}
 	void OnGUI()
 	{
 		
 	}
+	/// <summary>
+	/// don't remove it
+	/// </summary>
 	void OnApplicationQuit()
 	{
 		GameCoreSingletone.Singletone.Dispose();

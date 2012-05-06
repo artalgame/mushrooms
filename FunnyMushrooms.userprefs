@@ -1,30 +1,25 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MainMenu\SplashScreenState.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MainMenu\MainMenu.cs">
     <Files>
-      <File FileName="config.xml" Line="4" Column="17" />
-      <File FileName="Assets\Scripts\FundamentalClasses\LogController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FundamentalClasses\GlobalConstants.cs" Line="20" Column="54" />
-      <File FileName="Assets\Scripts\FundamentalClasses\GameCore.cs" Line="23" Column="3" />
-      <File FileName="Assets\Scripts\FundamentalClasses\ILocalizationController.cs" Line="29" Column="21" />
-      <File FileName="Assets\Scripts\FundamentalClasses\LocalizationController.cs" Line="38" Column="2" />
-      <File FileName="Assets\Scripts\FundamentalClasses\GameCoreSingletone.cs" Line="71" Column="41" />
-      <File FileName="d:\ARTAL\ARTAL\ARTAL_GAME\ARTAL_GAME\FunnyMushrooms\Assets\Scripts\FundamentalClasses\ILogController.cs" Line="40" Column="3" />
-      <File FileName="Assets\Scripts\FundamentalClasses\SettingController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MainMenu\MainMenu.cs" Line="15" Column="32" />
-      <File FileName="Assets\Scripts\MainMenu\IMainMenuState.cs" Line="11" Column="18" />
-      <File FileName="Assets\Scripts\MainMenu\SplashScreenState.cs" Line="22" Column="92" />
-      <File FileName="Assets\Scripts\MainMenu\MainMenuState.cs" Line="27" Column="4" />
+      <File FileName="Assets\Scripts\FundamentalClasses\IChangeMusicListener.cs" Line="5" Column="18" />
+      <File FileName="Assets\Scripts\FundamentalClasses\IChangeSoundListener.cs" Line="5" Column="18" />
+      <File FileName="Assets\Scripts\FundamentalClasses\IChangeSoundSender.cs" Line="6" Column="56" />
+      <File FileName="Assets\Scripts\FundamentalClasses\IChangeMusicSender.cs" Line="6" Column="56" />
+      <File FileName="Assets\Scripts\FundamentalClasses\ISettingController.cs" Line="6" Column="86" />
+      <File FileName="Assets\Scripts\FundamentalClasses\SettingController.cs" Line="22" Column="50" />
+      <File FileName="Assets\Scripts\MainMenu\MainMenu.cs" Line="28" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="D:\ARTAL\ARTAL\ARTAL_GAME\ARTAL_GAME\FunnyMushrooms\Assets\Scripts\FundamentalClasses\GameCoreSingletone.cs" line="47" />
-      <Breakpoint file="D:\ARTAL\ARTAL\ARTAL_GAME\ARTAL_GAME\FunnyMushrooms\Assets\Scripts\FundamentalClasses\SettingController.cs" line="120" />
+      <Breakpoint file="D:\ARTAL\ARTAL\ARTAL_GAME\ARTAL_GAME\FunnyMushrooms\Assets\ButtonClick.cs" line="34" />
+      <Breakpoint file="D:\ARTAL\ARTAL\ARTAL_GAME\ARTAL_GAME\FunnyMushrooms\Assets\ButtonClick.cs" line="13" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
     <Watch file="Assets\Scripts\FundamentalClasses\GameCoreSingletone.cs" line="56" offsetX="524" offsetY="752" expression="configReader.Current.Name" liveUpdate="True" />
     <Watch file="Assets\Scripts\FundamentalClasses\GameCoreSingletone.cs" line="56" offsetX="524" offsetY="777" expression="configReader.Value" liveUpdate="False" />
+    <Watch file="Assets\Scripts\MainMenu\SplashScreenState.cs" line="26" offsetX="356" offsetY="400" expression="_currentState" liveUpdate="False" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
 </Properties>

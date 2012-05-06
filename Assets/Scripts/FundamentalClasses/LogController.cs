@@ -62,28 +62,37 @@ public class LogController:ILogContreller
 	/// </summary>
 	public LogController(string logFilePath)
 	{
-		FileInfo logFileInfo = new FileInfo(logFilePath);
-		FileStream logFile;
-		///logfile is exist - create FileStream
-		try
+		if((Application.platform == RuntimePlatform.WindowsPlayer)||
+			(Application.platform == RuntimePlatform.WindowsEditor))
 		{
- 			logFile = new FileStream(logFilePath,FileMode.Create);
-			_fileNameFull = logFileInfo.FullName;
+			FileInfo logFileInfo = new FileInfo(logFilePath);
+			FileStream logFile;
+			///logfile is exist - create FileStream
+			try
+			{
+	 			logFile = new FileStream(logFilePath,FileMode.Create);
+				_fileNameFull = logFileInfo.FullName;
+			}
+			catch
+			{
+				Debug.LogError("Can not create or open log file");
+				logFile = null;
+			}
+			///if error with log File
+			if(logFile == null)
+				_logFileWriter = null;
+			else
+			{
+			///make buffered stream with 100KB buffer memory
+				_logFileWriter = new StreamWriter(new BufferedStream(logFile,100000));
+			}
+				WriteLine("log created");
 		}
-		catch
-		{
-			Debug.LogError("Can not create or open log file");
-			logFile = null;
-		}
-		///if error with log File
-		if(logFile == null)
-			_logFileWriter = null;
 		else
 		{
-		///make buffered stream with 100KB buffer memory
-			_logFileWriter = new StreamWriter(new BufferedStream(logFile,100000));
+			_logFileWriter = null;
 		}
-			WriteLine("log created");
+		
 	}	
 	/// <summary>
 	/// Write the specified value.
@@ -176,16 +185,14 @@ public class LogController:ILogContreller
 		{
 			WriteLine("Log file is correctly closed from Dispose method");
 			WriteLine("Log file ended on "+DateTime.Now.ToLongDateString()+" "+DateTime.Now.ToLongTimeString());
-			if(_logFileWriter!=null)
-				_logFileWriter.Close();
-			GC.Collect();
 		}
 		else
 		{
 			WriteLine("Log file is correctly closed from Finalizator");
 			WriteLine("Log file ended on "+DateTime.Now.ToLongDateString()+" "+DateTime.Now.ToLongTimeString());
-			if(_logFileWriter!=null)
-			_logFileWriter.Close();
 		}
+		if(_logFileWriter!=null)
+			_logFileWriter.Close();
+
 	}
 }

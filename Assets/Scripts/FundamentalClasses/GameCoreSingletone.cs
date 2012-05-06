@@ -26,6 +26,9 @@ public class GameCoreSingletone:IDisposable
             return _singletone;	
         }
     }
+	/// <summary>
+	/// Gets the current platform(Read only).
+	/// </summary>
 	private ILogContreller _logController;
 	/// <summary>
 	/// Readonly property. Gets the log controller.
