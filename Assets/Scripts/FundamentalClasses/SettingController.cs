@@ -45,6 +45,16 @@ public class SettingController:ISettingController {
 			_idealResolution = value;
 		}
 	}
+	///Stretch GUI or save IdealCoordinates
+	private bool _stretchGUI = true;
+	public bool StretcGUI{
+		get{
+			return _stretchGUI;
+		}
+		set{
+			_stretchGUI=value;
+		}
+	}
 	
 	/// <summary>
 	/// The size of the _ideal font.
@@ -222,8 +232,11 @@ public class SettingController:ISettingController {
 	void SetDefaultSettings()
 	{
 		try{
-				LocalizationLanguages lang =(LocalizationLanguages)Enum.Parse(typeof(LocalizationLanguages),Application.systemLanguage.ToString());
-				Language = lang;	
+				Language=LocalizationLanguages.English;
+				//LocalizationLanguages lang =(LocalizationLanguages)Enum.Parse(typeof(LocalizationLanguages),Application.systemLanguage.ToString());
+				//Language = lang;	
+			
+				
 			}
 		catch
 			{

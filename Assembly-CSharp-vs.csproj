@@ -18,7 +18,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_3_5_0;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_ANDROID;ENABLE_GENERICS;ENABLE_TERRAIN;ENABLE_WEBCAM;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_2;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_ANDROID;ENABLE_GENERICS;ENABLE_TERRAIN;ENABLE_WEBCAM;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -119,6 +119,8 @@
      <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OTObjectType.cs" />
      <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OTPB.cs" />
      <Compile Include="Assets\Orthello\Standard Assets\OT\_Base\OTTimeCycle.cs" />
+     <Compile Include="Assets\Scripts\CameraSettings.cs" />
+     <Compile Include="Assets\Scripts\FieldControl.cs" />
      <Compile Include="Assets\Scripts\FundamentalClasses\GameCore.cs" />
      <Compile Include="Assets\Scripts\FundamentalClasses\GameCoreSingletone.cs" />
      <Compile Include="Assets\Scripts\FundamentalClasses\GlobalConstants.cs" />
@@ -134,12 +136,15 @@
      <Compile Include="Assets\Scripts\FundamentalClasses\LogController.cs" />
      <Compile Include="Assets\Scripts\FundamentalClasses\RealObjectParameters.cs" />
      <Compile Include="Assets\Scripts\FundamentalClasses\SettingController.cs" />
+     <Compile Include="Assets\Scripts\HeroSpriteControl.cs" />
      <Compile Include="Assets\Scripts\MainMenu\GameMenuControl\GameButtonControl.cs" />
+     <Compile Include="Assets\Scripts\MainMenu\GameMenuControl\LanguageSelecitionControl.cs" />
      <Compile Include="Assets\Scripts\MainMenu\GameMenuControl\MainMenuPanelControl.cs" />
      <Compile Include="Assets\Scripts\MainMenu\GameMenuControl\MusicSliderControl.cs" />
      <Compile Include="Assets\Scripts\MainMenu\GameMenuControl\QuitButtonControl.cs" />
      <Compile Include="Assets\Scripts\MainMenu\GameMenuControl\SettingButtonControl.cs" />
      <Compile Include="Assets\Scripts\MainMenu\GameMenuControl\SettingPanelControl.cs" />
+     <Compile Include="Assets\Scripts\MainMenu\GameMenuControl\SoundSliderControl.cs" />
      <Compile Include="Assets\Scripts\MainMenu\GameMenuControl\SplashTextureControl.cs" />
      <Compile Include="Assets\Scripts\MainMenu\IMainMenuState.cs" />
      <Compile Include="Assets\Scripts\MainMenu\MainMenu.cs" />
@@ -148,6 +153,8 @@
      <Compile Include="Assets\Scripts\MainMenu\QuitState.cs" />
      <Compile Include="Assets\Scripts\MainMenu\SettingsState.cs" />
      <Compile Include="Assets\Scripts\MainMenu\SplashScreenState.cs" />
+     <Compile Include="Assets\Scripts\RoadControl.cs" />
+     <Compile Include="Assets\Scripts\StatisticControl.cs" />
      <Compile Include="Assets\TransitionsManager\Scripts\RandomizeColor.cs" />
      <Compile Include="Assets\TransitionsManager\Scripts\TransitionManager.cs" />
      <Compile Include="Assets\ngui\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />

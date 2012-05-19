@@ -1,14 +1,29 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MainMenu\MainMenu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Orthello\-Read-Me.txt">
     <Files>
+      <File FileName="Assets\Orthello\-Read-Me.txt" Line="74" Column="36" />
       <File FileName="Assets\Scripts\FundamentalClasses\IChangeMusicListener.cs" Line="5" Column="18" />
       <File FileName="Assets\Scripts\FundamentalClasses\IChangeSoundListener.cs" Line="5" Column="18" />
       <File FileName="Assets\Scripts\FundamentalClasses\IChangeSoundSender.cs" Line="6" Column="56" />
       <File FileName="Assets\Scripts\FundamentalClasses\IChangeMusicSender.cs" Line="6" Column="56" />
-      <File FileName="Assets\Scripts\FundamentalClasses\ISettingController.cs" Line="6" Column="86" />
-      <File FileName="Assets\Scripts\FundamentalClasses\SettingController.cs" Line="22" Column="50" />
-      <File FileName="Assets\Scripts\MainMenu\MainMenu.cs" Line="28" Column="32" />
+      <File FileName="Assets\Scripts\FundamentalClasses\ISettingController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FundamentalClasses\SettingController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MainMenu\MainMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MainMenu\GameMenuControl\SettingPanelControl.cs" Line="75" Column="3" />
+      <File FileName="Assets\Scripts\MainMenu\GameMenuControl\MusicSliderControl.cs" Line="53" Column="2" />
+      <File FileName="Assets\Scripts\MainMenu\GameMenuControl\SoundSliderControl.cs" Line="23" Column="59" />
+      <File FileName="d:\ARTAL\ARTAL\ARTAL_GAME\ARTAL_GAME\FunnyMushrooms\Assets\Scripts\FundamentalClasses\ILogController.cs" Line="17" Column="40" />
+      <File FileName="Assets\Scripts\MainMenu\GameMenuControl\LanguageSelecitionControl.cs" Line="46" Column="2" />
+      <File FileName="Assets\Scripts\MainMenu\GameMenuControl\GameButtonControl.cs" Line="71" Column="4" />
+      <File FileName="Assets\Scripts\MainMenu\SettingsState.cs" Line="20" Column="24" />
+      <File FileName="Assets\Scripts\MainMenu\MainMenuState.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CameraSettings.cs" Line="40" Column="3" />
+      <File FileName="Assets\Scripts\FieldControl.cs" Line="20" Column="1" />
+      <File FileName="Assets\Scripts\StatisticControl.cs" Line="12" Column="16" />
+      <File FileName="Assets\Scripts\RoadControl.cs" Line="9" Column="53" />
+      <File FileName="Assets\Scripts\FundamentalClasses\RealObjectParameters.cs" Line="66" Column="4" />
+      <File FileName="Assets\Scripts\FundamentalClasses\GameCoreSingletone.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
