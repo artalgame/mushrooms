@@ -1,40 +1,30 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Orthello\-Read-Me.txt">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\RoadControl.cs">
     <Files>
-      <File FileName="Assets\Orthello\-Read-Me.txt" Line="74" Column="36" />
-      <File FileName="Assets\Scripts\FundamentalClasses\IChangeMusicListener.cs" Line="5" Column="18" />
-      <File FileName="Assets\Scripts\FundamentalClasses\IChangeSoundListener.cs" Line="5" Column="18" />
-      <File FileName="Assets\Scripts\FundamentalClasses\IChangeSoundSender.cs" Line="6" Column="56" />
-      <File FileName="Assets\Scripts\FundamentalClasses\IChangeMusicSender.cs" Line="6" Column="56" />
-      <File FileName="Assets\Scripts\FundamentalClasses\ISettingController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FundamentalClasses\SettingController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MainMenu\MainMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MainMenu\GameMenuControl\SettingPanelControl.cs" Line="75" Column="3" />
-      <File FileName="Assets\Scripts\MainMenu\GameMenuControl\MusicSliderControl.cs" Line="53" Column="2" />
-      <File FileName="Assets\Scripts\MainMenu\GameMenuControl\SoundSliderControl.cs" Line="23" Column="59" />
+      <File FileName="Assets\Scripts\CameraSettings.cs" Line="15" Column="61" />
+      <File FileName="Assets\Scripts\HeroSpriteControl.cs" Line="101" Column="98" />
+      <File FileName="Assets\Scripts\FieldControl.cs" Line="21" Column="1" />
+      <File FileName="Assets\Scripts\RoadControl.cs" Line="45" Column="1" />
+      <File FileName="Assets\Scripts\GameProcessorScript.cs" Line="11" Column="3" />
+      <File FileName="Assets\Scripts\IClickSender.cs" Line="4" Column="32" />
+      <File FileName="Assets\Scripts\IClickListener.cs" Line="8" Column="2" />
       <File FileName="d:\ARTAL\ARTAL\ARTAL_GAME\ARTAL_GAME\FunnyMushrooms\Assets\Scripts\FundamentalClasses\ILogController.cs" Line="17" Column="40" />
-      <File FileName="Assets\Scripts\MainMenu\GameMenuControl\LanguageSelecitionControl.cs" Line="46" Column="2" />
-      <File FileName="Assets\Scripts\MainMenu\GameMenuControl\GameButtonControl.cs" Line="71" Column="4" />
-      <File FileName="Assets\Scripts\MainMenu\SettingsState.cs" Line="20" Column="24" />
-      <File FileName="Assets\Scripts\MainMenu\MainMenuState.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CameraSettings.cs" Line="40" Column="3" />
-      <File FileName="Assets\Scripts\FieldControl.cs" Line="20" Column="1" />
-      <File FileName="Assets\Scripts\StatisticControl.cs" Line="12" Column="16" />
-      <File FileName="Assets\Scripts\RoadControl.cs" Line="9" Column="53" />
-      <File FileName="Assets\Scripts\FundamentalClasses\RealObjectParameters.cs" Line="66" Column="4" />
-      <File FileName="Assets\Scripts\FundamentalClasses\GameCoreSingletone.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameProcessorMouseControl.cs" Line="19" Column="1" />
+      <File FileName="Assets\Scripts\FundamentalClasses\GameCoreSingletone.cs" Line="109" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="D:\ARTAL\ARTAL\ARTAL_GAME\ARTAL_GAME\FunnyMushrooms\Assets\ButtonClick.cs" line="34" />
       <Breakpoint file="D:\ARTAL\ARTAL\ARTAL_GAME\ARTAL_GAME\FunnyMushrooms\Assets\ButtonClick.cs" line="13" />
+      <Breakpoint file="D:\ARTAL\ARTAL\ARTAL_GAME\ARTAL_GAME\FunnyMushrooms\Assets\Scripts\FundamentalClasses\RealObjectParameters.cs" line="65" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
     <Watch file="Assets\Scripts\FundamentalClasses\GameCoreSingletone.cs" line="56" offsetX="524" offsetY="752" expression="configReader.Current.Name" liveUpdate="True" />
     <Watch file="Assets\Scripts\FundamentalClasses\GameCoreSingletone.cs" line="56" offsetX="524" offsetY="777" expression="configReader.Value" liveUpdate="False" />
     <Watch file="Assets\Scripts\MainMenu\SplashScreenState.cs" line="26" offsetX="356" offsetY="400" expression="_currentState" liveUpdate="False" />
+    <Watch file="Assets\Orthello\Standard Assets\OT\_Base\OTObject.cs" line="507" offsetX="148" offsetY="5056" expression="OT" liveUpdate="False" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
 </Properties>
