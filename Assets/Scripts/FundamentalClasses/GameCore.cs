@@ -15,9 +15,12 @@ public class GameCore : MonoBehaviour
 		///create Singletone of Game Core
 		var t =	GameCoreSingletone.Singletone;		
 	}
-	void OnGUI()
+	void Update()
 	{
-		
+		if(Input.GetKeyDown(KeyCode.Escape))
+		{
+			Application.Quit();
+		}
 	}
 	/// <summary>
 	/// don't remove it
